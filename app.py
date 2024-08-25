@@ -28,10 +28,10 @@ def recommend(movie):  #given movie
       recommmended_movies_posters.append(fetch_poster(movies_id))
   return recommended_movies,recommmended_movies_posters
 
-movies_dict=pickle.load(open('P:\movies recommended system\Movies_recommended_system\movie_dict.pkl','rb'))
+movies_dict=pickle.load(open('movie_dict.pkl','rb'))
 movies=pd.DataFrame(movies_dict)
 
-similarity=pickle.load(open('P:\movies recommended system\Movies_recommended_system\similarity.pkl','rb'))
+similarity=pickle.load(open('similarity.pkl','rb'))
 
 st.title('Movie Recommender System')
 
